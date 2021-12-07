@@ -1,0 +1,92 @@
+/* Carousel */
+
+.carousel{position:relative;margin-bottom:0px;line-height:1;} 
+
+.carousel-inner{overflow:hidden;width:100%;position:relative;} 
+
+.carousel .item{display:none;position:relative;-webkit-transition:0.6s ease-in-out left;-moz-transition:0.6s ease-in-out left;-ms-transition:0.6s ease-in-out left;-o-transition:0.6s ease-in-out left;transition:0.6s ease-in-out left;} 
+
+.carousel .item>img{display:block;line-height:1;} 
+
+.carousel .active,.carousel .next,.carousel .prev{display:block;} 
+
+.carousel .active{left:0;} 
+
+.carousel .next,.carousel .prev{position:absolute;top:0;width:100%;} 
+
+.carousel .next{left:100%;} 
+
+.carousel .prev{left:-100%;} 
+
+.carousel .next.left,.carousel .prev.right{left:0;}
+
+.carousel .active.left{left:-100%;} 
+
+.carousel .active.right{left:100%;} 
+
+.carousel-control{
+	position:absolute;
+	top:89px;
+	width:35px;
+	height:59px;
+	display: block;
+	text-indent: -99999px;
+	background-image: url(../images/carousel/control-sprite.png);
+}
+
+.carousel-control.left {
+	left: 15px;
+	background-position: left top;
+}
+
+.carousel-control.left:hover {background-position: left bottom;}
+
+.carousel-control.right{
+	right:15px;
+	background-position: right top;
+}
+
+.carousel-control.right:hover {background-position: right bottom;}
+
+/* Buttons */
+
+.gatein-buttons {margin-top: 20px;}
+
+.gatein-buttons a.download-button {
+	float: left;
+	height: 32px;
+	display: block;
+	text-indent: -999999px;
+}
+
+#button-portal {
+	width: 203px;
+	background: url(../images/download-portal.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+#button-portal:hover,
+#button-uxp:hover {background-position: left bottom;}
+
+#button-uxp {
+	width: 193px;
+	background: url(../images/download-uxp.png);	
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.gatein-buttons a.link {
+	display: inline-block;
+	margin-left: 15px;
+	line-height: 32px;
+}
+
+/* Compare */
+
+#gatein-compare {
+	background: url(../images/compare-line.png) no-repeat center center;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 27px;
+}
